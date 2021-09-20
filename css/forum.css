@@ -1,0 +1,13 @@
+@import url('/css/all.css');
+
+
+
+.home .home-content .text-1{
+    font-size: 70px;
+}
+
+
+.home .home-content .text-1 span {
+    color: var(--color-third);
+    font-weight: 600;
+}

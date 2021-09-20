@@ -26,19 +26,18 @@ $(document).ready(function(){
 
 
     // typing animation script
-
     let typed = new Typed(".typing", {
         strings: ["ALTF4 WHITELIST", "One Of The Best Communities Out There"],
         typeSpeed: 100,
         backSpeed: 30,
         loop: false
     })
-    // typed = new Typed(".typing-2", {
-    //     strings: ["ALTF4","ALTF4 Whitelist","ALTF4 FORUMS"],
-    //     typeSpeed: 100,
-    //     backSpeed: 60,
-    //     loop: true
-    // })
+    typed = new Typed(".typing-2", {
+        strings: ["Lawyer","Taxi Driver","Mechanic","Stripper","Delivery Driver"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
 
     // owl carousel script 
     $('.carousel').owlCarousel({

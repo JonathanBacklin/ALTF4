@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
+:root {
+    /* background colors */ 
+    --bg-color:white;
+
+    /* text colors */
+    --color-primary: purple;
+    --color-secondary: black;
+    --color-third: lightgrey;
+    --color-fourth: turquoise;
+
+    /*Fonts*/
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Raleway', sans-serif;
+    /* --ff-Primary: 'Ubuntu', sans-serif; */
+    
+    /* --ff-secondary: 'Roboto', sans-serif; */
+}

@@ -1,0 +1,187 @@
+@import url('/css/all.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+.max-width {
+    margin: auto ;
+    max-width: 1300px;
+    padding: 0 80px;
+}
+
+p {
+    color: var(--color-third);
+}
+
+
+/* 
+
+navbar styling 
+
+*/
+
+
+.navbar {
+    font-family: var(--ff-secondary);
+    padding: 30px 0;
+    position: fixed;
+    transition: all 0.3s ease;
+    width: 100%;
+    z-index: 999;
+}
+.navbar.sticky {
+    background: var(--color-fourth);
+    opacity: 0.8;
+    padding: 15px 0;
+}
+.navbar.sticky .max-width .menu li a  { 
+color: var(--color-primary);
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: var(--color-primary);
+    font-size: 50px;
+    font-weight: 600;
+}
+.navbar .logo a span {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, var(--color-primary),var(--color-fourth),var(--color-secondary));
+    background-size: 400%;
+    color: transparent;
+    animation: text 10s infinite;
+}
+
+@keyframes text {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.navbar.sticky .logo a span {
+   background-image: linear-gradient(45deg, var(--color-primary),var(--color-fourth),var(--color-secondary));
+   color: transparent;
+   -webkit-background-clip: text;
+   background-size: 400%;
+   animation: text 10s infinite;
+}
+
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: var(--color-fourth);
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+ 
+.navbar.sticky .menu li a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+/* 
+
+menu btn styling 
+
+*/
+
+.scroll-up-btn {
+    background: var(--color-fourth);
+    border-radius: 6px;
+    bottom: 10px;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 30px;
+    height: 45px;
+    line-height: 45px;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 42px;
+    z-index: 9999;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-btn {
+    color:var(--color-primary) ;
+    cursor: pointer;
+    display: none;
+    font-size: 23px;
+}
+
+/* responsive media query start  */
+
+
+@media (max-width:947px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content:"\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -1000%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+}
