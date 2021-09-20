@@ -1,7 +1,4 @@
-@import url('/css/all.css');
-
-
-
+/* @import url('/css/all.css'); */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -157,7 +154,8 @@ home section styling
     padding: 12px 36px;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+.home .home-content a:hover,
+.server .server-server .server-button a {
     color:var(--color-third) ;
     background: none;
 }
@@ -168,9 +166,7 @@ Server Content Styling
 
 */
 
-.server {
 
-}
 .server-server {
     display: flex;
     padding: 50px;

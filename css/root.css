@@ -3,18 +3,18 @@
 
 :root {
     /* background colors */ 
-    --bg-color:white;
+    --bg-color:rgb(241, 240, 240);
 
     /* text colors */
     --color-primary: purple;
     --color-secondary: black;
     --color-third: lightgrey;
     --color-fourth: turquoise;
+    --color-fifth: white;
 
     /*Fonts*/
     --ff-primary: 'Poppins', sans-serif;
     --ff-secondary: 'Raleway', sans-serif;
-    /* --ff-Primary: 'Ubuntu', sans-serif; */
-    
+    /* --ff-primary: 'Ubuntu', sans-serif; */
     /* --ff-secondary: 'Roboto', sans-serif; */
 }
